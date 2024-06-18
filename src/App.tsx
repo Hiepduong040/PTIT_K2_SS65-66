@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react'
+import Ex01 from './components/Ex1/Ex01'
+import Ex02 from './components/Ex2/Ex02'
+import Ex03 from './components/Ex3/Ex03'
+import Ex04 from './components/Ex4/Ex04'
+import Ex05 from './components/Ex5/Ex05'
+import Ex06 from './components/Ex6/Ex06'
+import Ex07 from './components/Ex7/Ex07'
+import Ex08 from './components/Ex8/Ex08'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>App
+      <Ex01></Ex01>
+      <Ex02></Ex02>
+      <Ex03></Ex03>
+      <Ex04></Ex04>
+      <Ex05></Ex05>
+      <Ex06></Ex06>
+      <Ex07></Ex07>
+      <Ex08></Ex08>
+    </div>
   )
 }
-
-export default App
